@@ -1,0 +1,19 @@
+### Configuration for launch_jupyter and launch_rstudio ###
+
+## NOTE: all the options should be unquoted, e.g.
+# option: value
+
+## Account string
+# e.g. account: a_mygroup
+account:
+
+# Name of the partition you want to run interactive jobs on
+# e.g. partition: general
+partition:
+
+## Personalise default settings
+# NOTE: just uncomment and change the setting to run them
+# They take priority over default.yaml
+#memory: 10G
+#cores: 8
+#time: 08:00:00

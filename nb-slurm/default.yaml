@@ -1,0 +1,5 @@
+## Default settings
+# Can be overridden with -m, -c, -t
+memory: 10G
+cores: 8
+time: 08:00:00

@@ -1,0 +1,26 @@
+#!/bin/bash
+# Jupyter tunnelling and launcher
+# Adapted from a script from Xiao Tan
+
+conda activate jupyter-notebook
+
+# Avoid too many processes per MPI process on the node
+export OMP_NUM_THREADS=1
+
+# get tunneling info
+XDG_RUNTIME_DIR=""
+node=$(hostname -s).hpc.net.uq.edu.au
+user=$(whoami)
+cluster="bunya"
+port=3445
+
+# print tunneling instructions jupyter-log
+echo -e "
+Paste this on your local machine to create an SSH tunnel:
+ssh -N -f -L ${port}:${node}:${port} ${user}@${cluster}.rcc.uq.edu.au
+
+Then, open this address on your local machine's browser:
+localhost:${port}  (https://localhost:${port} if using a password)
+"
+
+jupyter notebook --no-browser --port="${port}" --ip="${node}"
