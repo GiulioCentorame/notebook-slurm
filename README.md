@@ -55,3 +55,4 @@ NOTE: long-form options (e.g., --memory 10G) are not supported
 This wrapper uses various snippets from:
 - Xiao Tan for the basic Jupyter script
 - Stefan Farestam's [YAML parser for Bash](https://stackoverflow.com/a/21189044/10798015)
+- The Rocker project for their [container and running instructions](https://rocker-project.org/use/singularity.html#running-a-rocker-singularity-container-localhost-no-password)
