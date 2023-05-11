@@ -15,10 +15,10 @@ Small wrapper to launch an interactive job for notebooks within the Slurm schedu
 
 ## Setup
 
-Clone this repository:
+Clone this repository (`devel` branch only for now):
 
 ``` shell
-git clone https://github.com/GiulioCentorame/notebook-slurm.git
+git clone -b devel --single-branch git@github.com:GiulioCentorame/notebook-slurm.git
 ```
 
 Set up your options using `config.yaml`. Specifically, you will need to add your account string on `account` (e.g., `a_groupname`):
