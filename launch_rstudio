@@ -6,9 +6,9 @@ eval $(parse_yaml nb-slurm/default.yaml "OPT_")
 eval $(parse_yaml nb-slurm/config.yaml "OPT_")
 
 # Declare variables
-memory=OPT_memory
-cores=OPT_cores
-time=OPT_time
+memory=$OPT_memory
+cores=$OPT_cores
+time=$OPT_time
 debug=""
 
 # Print a user-friendly usage guide
