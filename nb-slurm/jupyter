@@ -2,7 +2,12 @@
 # Jupyter tunnelling and launcher
 # Adapted from a script from Xiao Tan
 
-conda activate jupyter-notebook
+source yaml_parser
+
+eval $(parse_yaml default.yaml "OPT_")
+eval $(parse_yaml config.yaml "OPT_")
+
+conda activate $OPT_conda_name
 
 # Avoid too many processes per MPI process on the node
 export OMP_NUM_THREADS=1

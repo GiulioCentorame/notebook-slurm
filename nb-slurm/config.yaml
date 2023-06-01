@@ -11,6 +11,9 @@ account:
 # e.g. partition: general
 partition:
 
+# Name of the conda env
+conda_name: 
+
 ## Personalise default settings
 # NOTE: just uncomment and change the setting to run them
 # They take priority over default.yaml

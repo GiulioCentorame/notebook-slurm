@@ -4,21 +4,23 @@ Small wrapper to launch an interactive job for notebooks within the Slurm schedu
 ## Development status
 
 - JupyterLab support is in **BETA**
-- RStudio support is in **ALPHA**
+- ~~RStudio support is in **ALPHA**~~ Currently not supported. If you got it working on Bunya, please do [get in touch](mailto:g.centorame@uq.edu.au)!
 ## Requirements
 
 - `git`
-- (For Jupyter notebooks) A default installation of `conda` or `mamba`, with an environment containing [JupyterLab](https://jupyter.org/install). You can create one with e.g.
+- A default installation of `conda` or `mamba`, with an environment containing [JupyterLab](https://jupyter.org/install). You can create one with e.g.
   ```shell
   conda create -n jupyter-notebook -c conda-forge jupyterlab
   ```
 
+If your environment is called anything but `jupyter-notebook`
+
 ## Setup
 
-Clone this repository (`devel` branch only for now):
+Clone this repository:
 
 ``` shell
-git clone -b devel --single-branch git@github.com:GiulioCentorame/notebook-slurm.git
+git clone git@github.com:GiulioCentorame/notebook-slurm.git
 ```
 
 Set up your options using `config.yaml`. Specifically, you will need to add your account string on `account` (e.g., `a_groupname`):
